@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #e0e0e0;
+}
+.parent {
+  position: relative;
+  width: 755px;
+  height: 500px;
+  border: solid 4px white;
+  overflow: hidden;
+}
+.child1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url(./images/car.jpg) no-repeat 0px 0px;
+}
+.child2 {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  background: url(./images/car.png) no-repeat 0px 0px;
+  border-right: 3px solid rgb(255, 255, 255);
+}
+.child2::before {
+  content: "\f07e";
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0%;
+  top: 50%;
+  transform: translate(55%, -50%);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
